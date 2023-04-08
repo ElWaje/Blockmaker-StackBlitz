@@ -76,4 +76,9 @@ seccion2Img.style.margin = "20px";
 seccion2Video.style.width = "200px";
 seccion2Video.style.height = "200px";
 seccion2Video.style.margin = "20px";
-
+seccion2.style.flex = "1";
+seccion2.style.display = "flex";
+seccion2.style.justifyContent = "center";
+seccion2.style.alignItems = "center";
+seccion2.style.flexDirection = "column";
+seccion2.style.margin = "0 10%";
