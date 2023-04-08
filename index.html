@@ -8,22 +8,28 @@
 <body>
   <header>
     <h1>Bienvenido a mi primera página HTML</h1>
+    <audio id="audio" src="https://www.royaltyfreemusicclips.com/pir/libs/media/Walking_Music_1.wav" loop></audio>
+    <div id="audio-controls">
+      <button id="play-button">Play</button>
+      <button id="pause-button">Pause</button>
+      <input id="volume-control" type="range" min="0" max="1" step="0.1" value="1">
+    </div>
   </header>
   <nav>
     <ul>
-      <li><a href="#" id="nav-seccion1">Sección 1</a></li>
-      <li><a href="#" id="nav-seccion2">Sección 2</a></li>
+      <li><a href="#seccion1" id="nav-seccion1">Sección 1</a></li>
+      <li><a href="#seccion2" id="nav-seccion2">Sección 2</a></li>
     </ul>
   </nav>
   <main>
-    <div class="separador oculto"></div>
+    <div id="separador" class="separador oculto"></div>
     <div class="secciones-container">
       <section id="seccion1" class="oculto">
         <h2>Sección 1</h2>
         <div class="contenido">
           <img src="https://images.pexels.com/photos/5361307/pexels-photo-5361307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Mujer trabajando en una computadora portátil en un sofá" class="imagen">
           <p>Este es el contenido de la seccion 1</p>
-          <video class="video oculto" width="320" height="240">
+          <video class="video" poster="https://images.pexels.com/photos/5361307/pexels-photo-5361307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" controls width="200" height="200">
             <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
           </video>
         </div>
@@ -33,7 +39,7 @@
         <div class="contenido">
           <img src="https://images.pexels.com/photos/4300715/pexels-photo-4300715.jpeg" alt="Atardecer sobre el océano" class="imagen">
           <p>Este es el contenido de la seccion 2</p>
-          <video class="video oculto" width="320" height="240">
+          <video class="video" poster="https://images.pexels.com/photos/4300715/pexels-photo-4300715.jpeg" controls width="200" height="200">
             <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
           </video>
         </div>
@@ -42,15 +48,9 @@
   </main>
   <footer>
     <div id="footer-container">
-      <p id="footer-text">Derechos reservados 2023</p>
+      <p id="footer-text">Copyright &copy; 2023 Enrique Solís</p>
     </div>
   </footer>
-  <audio id="audio" src="https://www.royaltyfreemusicclips.com/pir/libs/media/Walking_Music_1.wav" loop></audio>
-  <div id="audio-controls">
-    <button id="play-button">Play</button>
-    <button id="pause-button">Pause</button>
-    <input id="volume-control" type="range" min="0" max="1" step="0.1" value="1">
-  </div>
   <script src="script.js"></script>
 </body>
 </html>
