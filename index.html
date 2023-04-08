@@ -1,36 +1,52 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html>
 <head>
   <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
   <title>Mi Primera Página HTML</title>
 </head>
-
 <body>
   <header>
     <h1>Bienvenido a mi primera página HTML</h1>
+    <audio id="audio" src="https://www.royaltyfreemusicclips.com/pir/libs/media/Walking_Music_1.wav" loop></audio>
+<div id="audio-controls">
+  <button id="play-button">Play</button>
+  <button id="pause-button">Pause</button>
+  <input id="volume-control" type="range" min="0" max="1" step="0.1" value="1">
+</div>
   </header>
   <nav>
     <ul>
-      <li><a href="index.html" aria-current="page">Inicio</a></li>
-      <li><a href="/page2.html">Otra página</a></li>
-      <li><a href="#seccion1">Sección 1</a></li>
-      <li><a href="#seccion2">Sección 2</a></li>
+      <li><a href="#seccion1" id="nav-seccion1">Sección 1</a></li>
+      <li><a href="#seccion2" id="nav-seccion2">Sección 2</a></li>
     </ul>
   </nav>
   <main>
-    <section id="seccion1">
-      <h2>Sección 1</h2>
-      <p>Este es el contenido de la sección 1.</p>
-    </section>
-    <section id="seccion2">
-      <h2>Sección 2</h2>
-      <p>Este es el contenido de la sección 2.</p>
-    </section>
+    <div class="separador oculto"></div>
+    <div class="secciones-container">
+      <section id="seccion1" class="oculto">
+        <h2>Sección 1</h2>
+        <div class="contenido">
+          <img src="https://images.pexels.com/photos/5361307/pexels-photo-5361307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Mujer trabajando en una computadora portátil en un sofá" class="imagen">
+          <p>Este es el contenido de la seccion 1</p>
+          <video class="video" src="https://youtu.be/itX_aWc1Fqk" controls width="100" height="100"></video>
+        </div>
+      </section>
+      <section id="seccion2" class="oculto">
+        <h2>Sección 2</h2>
+        <div class="contenido">
+          <img src="https://images.pexels.com/photos/4300715/pexels-photo-4300715.jpeg" alt="Atardecer sobre el océano" class="imagen">
+          <p>Este es el contenido de la seccion 2</p>
+          <video class="video" src="https://youtu.be/4uLRAlX7NpM" controls width="100" height="100"></video>
+        </div>
+      </section>
+    </div>
   </main>
   <footer>
-    <p>Copyright &copy; 2023 Enrique Solís</p>
+    <div id="footer-container">
+      <p id="footer-text">Copyright &copy; 2023 Enrique Solís</p>
+    </div>
   </footer>
+  <script src="script.js"></script>
 </body>
-
 </html>
