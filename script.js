@@ -76,3 +76,4 @@ seccion2Img.style.margin = "20px";
 seccion2Video.style.width = "200px";
 seccion2Video.style.height = "200px";
 seccion2Video.style.margin = "20px";
+
