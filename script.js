@@ -18,13 +18,12 @@ volumeControl.addEventListener('input', () => {
 function toggleSectionVisibility(sectionId) {
   const section = document.getElementById(sectionId);
   const separador = document.querySelector('.separador');
+  const seccion1 = document.getElementById('seccion1');
+  const seccion2 = document.getElementById('seccion2');
 
   section.classList.toggle('oculto');
 
-  if (
-    !document.getElementById('seccion1').classList.contains('oculto') &&
-    !document.getElementById('seccion2').classList.contains('oculto')
-  ) {
+  if (!seccion1.classList.contains('oculto') && !seccion2.classList.contains('oculto')) {
     separador.classList.remove('oculto');
   } else {
     separador.classList.add('oculto');
@@ -44,34 +43,13 @@ const navSeccion1 = document.getElementById('nav-seccion1');
 navSeccion1.addEventListener('click', (event) => {
   event.preventDefault();
   toggleSectionVisibility('seccion1');
-  if (!seccion1.classList.contains('oculto') || !seccion2.classList.contains('oculto')) {
-    separador.classList.remove('oculto');
-  } else {
-    separador.classList.add('oculto');
-  }
 });
 
 const navSeccion2 = document.getElementById('nav-seccion2');
 navSeccion2.addEventListener('click', (event) => {
   event.preventDefault();
   toggleSectionVisibility('seccion2');
-  if (!seccion1.classList.contains('oculto') || !seccion2.classList.contains('oculto')) {
-    separador.classList.remove('oculto');
-  } else {
-    separador.classList.add('oculto');
-  }
 });
-
-function loadVideo(videoSrc, imageSrc) {
-  const video = document.querySelector(`img[src="${imageSrc}"] + video`);
-  if (video) {
-    video.src = videoSrc;
-    video.style.display = "block";
-  }
-}
-
-const seccionesContainer = document.querySelector('.secciones-container');
-seccionesContainer.style.display = "flex";
 
 const seccion1Img = seccion1.querySelector('img');
 const seccion1Video = seccion1.querySelector('video');
@@ -98,9 +76,3 @@ seccion2Img.style.margin = "20px";
 seccion2Video.style.width = "200px";
 seccion2Video.style.height = "200px";
 seccion2Video.style.margin = "20px";
-seccion2.style.flex = "1";
-seccion2.style.display = "flex";
-seccion2.style.justifyContent = "center";
-seccion2.style.alignItems = "center";
-seccion2.style.flexDirection = "column";
-seccion2.style.margin = "0 10%"; 
