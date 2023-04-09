@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="styles.css" />
-  <title>Página II</title>
+  <title>Mi Primera Página HTML</title>
 </head>
 <body>
   <header>
-    <h1>Bienvenido a mi página II HTML</h1>
+    <h1>Bienvenido a mi primera página HTML</h1>
     <audio id="audio" src="https://www.royaltyfreemusicclips.com/pir/libs/media/Walking_Music_1.wav" loop></audio>
     <div id="audio-controls">
       <button id="play-button">Play</button>
@@ -16,20 +16,23 @@
     </div>
   </header>
   <nav>
-    <button type="button" id="nav-index" class="nav-buttom" onclick="window.location.href = 'index.html';">Inicio</button>
+    <button type="button" id="nav-index" class="nav-actual" onclick="window.location.href = 'index.html';">Inicio</button>
     <button type="button" id="nav-seccion1" class="nav-button">Sección 1</button>
     <button type="button" id="nav-seccion2" class="nav-button">Sección 2</button>
-    <button type="button" id="nav-page2" class="nav-actual" onclick="window.location.href = 'page2.html';">Página 2</button>
+    <button type="button" id="nav-page2" class="nav-button" onclick="window.location.href = 'page2.html';">Página 2</button>
   </nav>
   <main>
     <div class="secciones-container">
       <section id="seccion1" class="seccion seccion-oculta">
         <div class="contenido">
           <h2>Sección 1</h2>
-          <div class="oviedo-text">
-              <h3>Oviedo</h3>
-              <p>Oviedo es una ciudad llena de historia y arte. Desde sus calles empedradas hasta sus edificios de estilo gótico y barroco, Oviedo es un destino turístico popular en España. La ciudad cuenta con numerosos monumentos históricos, como la Catedral de San Salvador y el Teatro Campoamor, así como una gran cantidad de museos y galerías de arte. Pero lo que hace que Oviedo sea realmente especial es su ambiente acogedor y amistoso, y su gastronomía tradicional que incluye platos como la fabada asturiana y la sidra asturiana.</p>
-          </div>         
+          <div class="media-container">
+            <p>Este es el contenido de la sección 1</p>
+            <img src="seccion1.jpg" alt="Campillin" class="media">
+            <video class="videoMedia" poster="seccion1.jpg" controls>
+              <source src="seccion1.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </section>
       
@@ -39,10 +42,13 @@
 
       <section id="seccion2" class="seccion seccion-oculta">
         <div class="contenido">
-          <h2>Sección 2</h2>         
-          <div class="oviedo-text">
-              <h3>Obras en Oviedo</h3>
-              <p>Las obras de arte en la calle de Oviedo son una muestra del talento y la creatividad de artistas locales y de todo el mundo. Desde esculturas monumentales hasta pequeñas intervenciones urbanas, estas obras contribuyen a la identidad de la ciudad y son parte de su patrimonio cultural. Las calles de Oviedo son un museo al aire libre y una invitación para explorar y descubrir la creatividad que se esconde en cada esquina. Al caminar por sus calles, es posible encontrar obras de artistas como Eduardo Chillida, Santiago de Santiago, Manolo Valdés y muchos más.</p>
+          <h2>Sección 2</h2>
+          <div class="media-container">
+            <p>Este es el contenido de la sección 2</p>
+            <img src="seccion2.jpg" alt="Obra" class="media">
+            <video class="videoMedia" poster="seccion2.jpg" controls>
+              <source src="seccion2.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
       </section>
