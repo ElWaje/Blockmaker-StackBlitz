@@ -1,133 +1,226 @@
-/* Estilos generales */
-body {
-margin: 0;
-padding: 0;
-font-family: Arial, sans-serif;
-font-size: 16px;
-line-height: 1.5;
+body{
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:white;
+  background-color: #444;
 }
 
-h1 {
-text-align: center;
-margin: 20px 0;
-}
-
-h2 {
-margin-top: 0;
-}
-
-img {
-max-width: 100%;
-height: auto;
-display: block;
-}
-
-.video {
-display: none;
-}
-
-/* Estilos de la cabecera */
-header {
-background-color: #444;
-color: #fff;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px 20px;
-}
-
-#audio-controls {
-display: flex;
-align-items: center;
-}
-
-#play-button, #pause-button {
-background-color: #fff;
-border: none;
-border-radius: 5px;
-color: #444;
-cursor: pointer;
-font-size: 16px;
-margin-right: 10px;
-padding: 5px 10px;
-}
-
-#volume-control {
-width: 50px;
-margin-right: 10px;
-}
-
-/* Estilos de la navegación */
-nav {
-background-color: #ccc;
-display: flex;
-justify-content: center;
-padding: 10px;
-}
-
-nav ul {
-display: flex;
-list-style: none;
-margin: 0;
-padding: 0;
-}
-
-nav ul li {
-margin-right: 10px;
-}
-
-nav ul li:last-child {
-margin-right: 0;
-}
-
-nav ul li a {
-color: #444;
-text-decoration: none;
-padding: 10px 20px;
-border-radius: 5px;
-}
-
-nav ul li a:hover {
-background-color: #444;
-color: #fff;
-}
-
-/* Estilos del contenido */
-main {
-padding: 20px;
-}
-
+/* Ajustes para el separador */
 .separador {
-height: 1px;
-background-color: #444;
-margin: 20px 0;
+  width: 10px;
+  height: 100%;
+  color: forestgreen;
+  background-color: fuchsia;
+  margin: 0 20px;
+  display: none;
 }
 
+.separador-oculto {
+  display: none;
+}
+.separador-visible {
+  display: block;
+}
+
+/* Ajustes para las secciones */
+.seccion {
+  width: 45%;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  height: 100%;
+  background-color: cornsilk;
+}
+
+.seccion-oculta {
+  display: none;
+}
+
+/* Ajustes para el contenedor de secciones */
 .secciones-container {
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: beige;
 }
 
-.contenido {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 20px;
+/* Ajustes para los botones del menú */
+nav{
+  background-color: bisque;
 }
 
-/* Estilos del footer */
+nav button {
+  color: #444;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+nav button.nav-actual{
+  background-color: gray;
+  color: #fff;
+
+}
+
+nav button.nav-button.active {
+  background-color: gray;
+  color: #fff;
+}
+
+nav button:hover {
+  background-color: lavender;
+  color: #444;
+  cursor: pointer;
+}
+
+/* Ajustes para el contenido */
+.contenido h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:rgb(255, 0, 106);
+}
+
+.seccion-content {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seccion-content img {
+  margin-top: 20px;
+}
+
+.contenido p {
+  margin: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:coral;
+}
+
+.seccion-content video {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.oviedo-text { 
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.oviedo-text h3 {
+  font-family: fantasy;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color:dodgerblue;
+}
+
+.oviedo-text p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color:chocolate;
+  margin: 0;
+}
+
+/* Ajustes para los medios */
+#audio-controls {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.media {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 20px auto;
+  display: block;
+}
+
+.videoMedia {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Ajustes para el footer */
 footer {
-background-color: #444;
-color: #fff;
-padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
 }
 
 #footer-container {
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #footer-text {
-margin: 0;
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+  animation-name: bounce-in;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
 }
 
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: translateY(500px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-50px);
+  }
+  80% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Ajustes adicionales para cumplir con especificaciones */
+
+.separador-linea {
+  color: black;
+  background-color: pink;
+  height: 100%;
+  width: 5px;
+  margin: 0 20px;
+}
+
+.secciones-container > * {
+  margin: 0 10px;
+}
