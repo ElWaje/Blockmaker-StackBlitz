@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="styles.css" />
-  <title>Mi Primera Página HTML</title>
+  <title>Página II</title>
 </head>
 <body>
   <header>
-    <h1>Bienvenido a mi primera página HTML</h1>
+    <h1>Bienvenido a mi página II HTML</h1>
     <audio id="audio" src="https://www.royaltyfreemusicclips.com/pir/libs/media/Walking_Music_1.wav" loop></audio>
     <div id="audio-controls">
       <button id="play-button">Play</button>
@@ -16,39 +16,42 @@
     </div>
   </header>
   <nav>
-    <ul>
-      <li><a href="#seccion1" id="nav-seccion1">Sección 1</a></li>
-      <li><a href="#seccion2" id="nav-seccion2">Sección 2</a></li>
-    </ul>
+    <button type="button" id="nav-index" class="nav-buttom" onclick="window.location.href = 'index.html';">Inicio</button>
+    <button type="button" id="nav-seccion1" class="nav-button">Sección 1</button>
+    <button type="button" id="nav-seccion2" class="nav-button">Sección 2</button>
+    <button type="button" id="nav-page2" class="nav-actual" onclick="window.location.href = 'page2.html';">Página 2</button>
   </nav>
   <main>
-    <div id="separador" class="oculto"></div>
     <div class="secciones-container">
-      <section id="seccion1" class="oculto">
-        <h2>Sección 1</h2>
+      <section id="seccion1" class="seccion seccion-oculta">
         <div class="contenido">
-          <img src="https://images.pexels.com/photos/5361307/pexels-photo-5361307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Mujer trabajando en una computadora portátil en un sofá" class="imagen">
-          <p>Este es el contenido de la seccion 1</p>
-          <video class="video" poster="https://images.pexels.com/photos/5361307/pexels-photo-5361307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" controls width="200" height="200">
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-          </video>
+          <h2>Sección 1</h2>
+          <div class="oviedo-text">
+              <h3>Oviedo</h3>
+              <p>Oviedo es una ciudad llena de historia y arte. Desde sus calles empedradas hasta sus edificios de estilo gótico y barroco, Oviedo es un destino turístico popular en España. La ciudad cuenta con numerosos monumentos históricos, como la Catedral de San Salvador y el Teatro Campoamor, así como una gran cantidad de museos y galerías de arte. Pero lo que hace que Oviedo sea realmente especial es su ambiente acogedor y amistoso, y su gastronomía tradicional que incluye platos como la fabada asturiana y la sidra asturiana.</p>
+          </div>         
         </div>
       </section>
-      <section id="seccion2" class="oculto">
-        <h2>Sección 2</h2>
+      
+      <div class="separador">
+        <div class="separador-linea"></div>
+      </div>
+
+      <section id="seccion2" class="seccion seccion-oculta">
         <div class="contenido">
-          <img src="https://images.pexels.com/photos/4300715/pexels-photo-4300715.jpeg" alt="Atardecer sobre el océano" class="imagen">
-          <p>Este es el contenido de la seccion 2</p>
-          <video class="video" poster="https://images.pexels.com/photos/4300715/pexels-photo-4300715.jpeg" controls width="200" height="200">
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-          </video>
+          <h2>Sección 2</h2>         
+          <div class="oviedo-text">
+              <h3>Obras en Oviedo</h3>
+              <p>Las obras de arte en la calle de Oviedo son una muestra del talento y la creatividad de artistas locales y de todo el mundo. Desde esculturas monumentales hasta pequeñas intervenciones urbanas, estas obras contribuyen a la identidad de la ciudad y son parte de su patrimonio cultural. Las calles de Oviedo son un museo al aire libre y una invitación para explorar y descubrir la creatividad que se esconde en cada esquina. Al caminar por sus calles, es posible encontrar obras de artistas como Eduardo Chillida, Santiago de Santiago, Manolo Valdés y muchos más.</p>
+          </div>
         </div>
       </section>
     </div>
+    <div></div>
   </main>
   <footer>
     <div id="footer-container">
-      <p id="footer-text">Copyright &copy; 2023 Enrique Solís</p>
+      <p id="footer-text">Derechos reservados &copy; 2023 Enrique Solís</p>
     </div>
   </footer>
   <script src="script.js"></script>
